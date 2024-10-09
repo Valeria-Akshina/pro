@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "IMB Plex Mono Regular";
+    src: url(/fonts/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: "IMB Plex Mono Bold";
+    src: url(/fonts/IBMPlexMono-Bold.ttf);
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation button {
+    color: #FF0070;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    padding: 0 13px;
+}
