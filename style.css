@@ -8,6 +8,16 @@
     src: url(/fonts/IBMPlexMono-Bold.ttf);
 }
 
+:root {
+    --font-family: "IBM Plex Mono", sans-serif;
+  }
+
+.background {
+    background: url("/img/cover-image-dark.png");
+    width: 1229px;
+    height: 768px;
+    position: relative;
+}
 
 .navigation {
     display: flex;
@@ -17,8 +27,43 @@
 
 .navigation button {
     color: #FF0070;
+    font-family: var(--font-family);
     font-size: 18px;
     border: none;
     background-color: transparent;
     padding: 0 13px;
+    width: 70px;
+    height: 26px;
 }
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 157px;
+    line-height: 83%;
+    color: #db00ff;
+    text-shadow: 4px 4px 0 0 #ff0070;
+}
+
+.title-mine {
+    position: absolute;
+    bottom: 135px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 491px;
+    height: 70px;    ;
+}
+
+.title-mine p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000028;
+    background: #ff0070;
+    margin: 0;
+    padding: 0;
+}
+
