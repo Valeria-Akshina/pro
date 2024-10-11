@@ -1,20 +1,30 @@
 @font-face {
-    font-family: "IMB Plex Mono Regular";
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
     src: url(/fonts/IBMPlexMono-Regular.ttf);
 }
 
 @font-face {
-    font-family: "IMB Plex Mono Bold";
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
     src: url(/fonts/IBMPlexMono-Bold.ttf);
 }
 
 :root {
-    --font-family: "IBM Plex Mono", sans-serif;
+    --font-family: "IBM Plex Mono", serif;
+    --purple: #db00ff;
+    --pink: #FF0070;
+  }
+
+  body {
+    width: 1024px;
+    margin: 0;
+    padding: 0;
   }
 
 .background {
     background: url("/img/cover-image-dark.png");
-    width: 1229px;
+    width: 1024px;
     height: 768px;
     position: relative;
 }
@@ -22,30 +32,48 @@
 .navigation {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    padding-top: 20px;
 }
 
 .navigation button {
-    color: #FF0070;
+    display: flex;
+    color: var(--pink);
     font-family: var(--font-family);
     font-size: 18px;
     border: none;
     background-color: transparent;
-    padding: 0 13px;
-    width: 70px;
-    height: 26px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    margin: 0 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border: 1px, solid, transparent;
+    height: 24px;
+    text-decoration: none;
+}
+
+.navigation button:hover {
+    border: 1px, solid, var(--purple);
 }
 
 .title {
+    position: absolute;
+    top: 50%;
     font-family: var(--font-family);
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
     font-weight: 700;
     font-size: 157px;
     line-height: 83%;
-    color: #db00ff;
-    text-shadow: 4px 4px 0 0 #ff0070;
+    color: var(--purple);
+    text-shadow: 4px 4px var(--pink);
+    transform: translateY(-50%);
 }
 
-.title-mine {
+.paragraph {
     position: absolute;
     bottom: 135px;
     right: 20px;
@@ -56,14 +84,51 @@
     height: 70px;    ;
 }
 
-.title-mine p {
+.paragraph p {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background: #ff0070;
+    background: var(--pink);
     margin: 0;
     padding: 0;
 }
 
+.lamp-text {
+    position: absolute;
+    width: 33px;
+    height: 26px;
+    left: 20px;
+    margin: 0px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--pink);
+}
+
+.lamp-b {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 983px;
+    top: 28px;
+    background: var(--pink);
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px var(--pink);
+}
+
+.textcols {
+
+}
+
+.text-items {
+
+}
+
+b {
+    background: var(--pink);
+}
