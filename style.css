@@ -19,6 +19,10 @@
   }
 
   body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--dark);
 
     
@@ -27,6 +31,7 @@
   html {
     box-sizing: border-box;
   }
+
 
 .background {
     position: relative;
@@ -110,15 +115,17 @@
     position: absolute;
     width: 33px;
     height: 26px;
-    left: 943px;
     top: 20px;
-    margin: 0;
+    left: 943px;
+    gap: 0;
+    opacity: 0;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
     color: var(--pink);
+
 }
 
 .lamp-b {
@@ -146,7 +153,7 @@
 }
 
 .rectangle-top{
-    position:absolute;
+    position: absolute;
     top: 20px;
     left: 979px;
     margin: 0;
@@ -374,6 +381,199 @@ a:hover {
     height: 398px;
     top: 33px;
     left: 670px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--light-pink);
+}
+
+.container-thrid { 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    height: 1015px;
+    left: 0;
+    top: 1994px;
+    padding: 0 20px;
+    align-items: center;
+    isolation: isolate;
+}
+
+.title-last {
+    position: absolute;
+    width: 315px;
+    height: 98px;
+    left: 20px;
+    top: 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--pink);
+}
+        
+        
+.section-thrid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    gap: 20px;
+    position: absolute;
+    width: 649px;
+    height: 1015px;
+    right: 20px;
+    left: 355px;
+    top: 0;
+}
+        
+.h2-higher {
+    width: 649px;
+    height: 23px; 
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--dark);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    background-color: var(--pink);
+}
+        
+        
+        
+.h2-text-second-one {
+    position: absolute;
+    width: 649px;
+    height: 23px;
+    left: 0;
+    top: 43px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--dark);
+    background-color: var(--pink);
+}
+        
+.last-one-p {
+    position: absolute;
+    width: 647.55px;
+    height: 211px;
+    left: 0;
+    top: 76px;
+    font-family: var(--font-family);
+    font-style: 400;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--light-pink);
+}
+        
+.h2-text-second-second {
+    position: absolute;
+    width: 649px;
+    height: 23px;
+    left: 0px;
+    top: 307px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    background-color: var(--pink);
+    color: var(--dark);
+}
+.last-second-p {
+    position: absolute;
+    width: 649px;
+    height: 117px;
+    left: 0px;
+    top: 340px;
+    font-family: var(--font-family);
+    font-style: 400;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--light-pink);
+}
+        
+.h2-text-second-thrid {
+    position: absolute;
+    width: 649px;
+    height: 23px;
+    top: 477px;
+    left: 0px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;line-height: 23.4px;
+    color: var(--dark);
+    background-color: var(--pink);
+}
+        
+.last-third-p {
+    position: absolute;
+    width: 649px;
+    height: 164px;
+    top: 510px;
+    left: 0px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--light-pink);
+}
+        
+.h2-text-second-fourth {
+    position: absolute;
+    width: 649px;
+    height: 23px;
+    top: 694px;
+    left: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--dark);
+    background-color: var(--pink);
+}
+        
+.last-fourth-p {
+    position: absolute;
+    width: 649px;
+    height: 118px;
+    top: 727px;
+    left: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px ;
+    color: var(--light-pink);
+}
+        
+.h2-text-second-fifth {
+    position: absolute;
+    width: 649px;
+    height: 23px;
+    top: 865px;
+    left: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--dark);
+    background-color: var(--pink);
+}
+        
+.last-fifth-p {
+    position: absolute;
+    width: 649px;
+    height: 117px;
+    top: 898px;
+    left: 0;   
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
