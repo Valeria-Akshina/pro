@@ -20,8 +20,7 @@
 
   body {
     background-color: var(--dark);
-    display: flex;
-    justify-content: center;
+
     
   }
 
@@ -66,7 +65,7 @@
     text-align: center;
     font-size: 18px;
     line-height: 18px;
-    text-align: left;
+    text-align: center;
     background-color: rgba(28,28,28,0);
     border: none;
     outline: none;
@@ -96,10 +95,8 @@
     top: 563px;
     left: 513px;
     right: 20px;
-    bottom: 134px;
-    width: 491px;
     bottom: 135px;
-    right: 20px;
+    width: 491px;
     height: 70px;
     font-family: var(--font-family);
     font-weight: 700;
@@ -164,14 +161,12 @@
 
 .background-main {
     width: 1024px;
-    height: 3352px;
-    top: 828px;
-    gap: 0;
-    background: var(--dark);
-    opacity: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,31 +175,29 @@
     height: 508px;
     left: 0;
     top: 828px;
-    position: absolute;
 }
 
 .title-first {
     position: absolute;
     width: 648.92px;
     height: 23px;
-    right: 20.19px;
+    left: 20.19px;
     top: 0;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
     color: var(--pink);
-    background-color: var(--dark);
 }
 
 .header-text {
     position: absolute;
     width: 648.92px;
-    height: 211px;
+    height: 23px;
     right: 20.19px;
-    top: 33px;
+    top: 0px;
     font-family: var(--font-family);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     line-height: 23px;
     background-color: var(--pink);
@@ -286,8 +279,8 @@ a:hover {
     left: 20px;
     top: 0;
     font-family: var(--font-family);
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 23.4px;
     color: var(--pink);
 }
@@ -341,7 +334,7 @@ a:hover {
     left: 335px;
     top: 0;
     font-family: var(--font-family);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--dark);
@@ -355,7 +348,7 @@ a:hover {
     top: 33px;
     left: 335px;
     font-family: var(--font-family);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--light-pink);
@@ -368,7 +361,7 @@ a:hover {
     left: 670px;
     top: 0;
     font-family: var(--font-family);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--dark);
@@ -382,7 +375,7 @@ a:hover {
     top: 33px;
     left: 670px;
     font-family: var(--font-family);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--light-pink);
