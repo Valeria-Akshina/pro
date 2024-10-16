@@ -19,22 +19,23 @@
   }
 
   body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
     background-color: var(--dark);
-
-    
+    justify-content: center;
   }
 
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
   html {
     box-sizing: border-box;
   }
 
 
 .background {
-    position: relative;
+    
     background: url("/img/cover-image-dark.png");
     background-size: 1229px 768px;
     background-position-x: -102px;
@@ -43,7 +44,7 @@
 }
 
 .start {
-    position: relative;
+    
     max-height: max-content;
     margin: 0;
 }
@@ -125,7 +126,6 @@
     line-height: 25px;
     text-align: center;
     color: var(--pink);
-
 }
 
 .lamp-b {
@@ -173,23 +173,18 @@
 }
 
 .container {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     width: 1024px;
-    height: 508px;
-    left: 0;
-    top: 828px;
 }
 
 .title-first {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 648.92px;
     height: 23px;
-    left: 20.19px;
-    top: 0;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
@@ -197,12 +192,15 @@
     color: var(--pink);
 }
 
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
 .header-text {
-    position: absolute;
     width: 648.92px;
     height: 23px;
     right: 20.19px;
-    top: 0px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
@@ -212,12 +210,10 @@
 }
 
 .p-text {
-    position: absolute;
     width: 648.92px;
     height: 211px;
     right: 20.19px;
-    top: 33px;
-    font-family: 'IBM Plex Mono';
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -225,7 +221,7 @@
 }
 
 a {
-    font-family: 'IBM Plex Mono';
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -240,12 +236,11 @@ a:hover {
 }
 
 .h2-text {
-    position: absolute;
     width: 648.92px;
     height: 23px;
     left: 355.08px;
     top: 264px;
-    font-family: 'IBM Plex Mono';
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
@@ -254,7 +249,6 @@ a:hover {
 }
 
 .p2-text {
-    position: absolute;
     width: 648.92px;
     height: 211px;
     left: 355.08px;
@@ -268,19 +262,13 @@ a:hover {
 
 .container-second {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 0 20px;
-    isolation: isolate;
-    position: absolute;
     width: 1024px;
-    height: 498px;
-    left: 0;
-    top: 1416px;
 }
 
 .title-middle {
-    position: absolute;
     width: 315px;
     height: 47px;
     left: 20px;
@@ -299,7 +287,6 @@ a:hover {
     align-items: flex-start;
     padding: 0;
     gap: 20px;
-    position: absolute;
     width: 984px;
     height: 431px;
     left: 20px;
@@ -308,7 +295,6 @@ a:hover {
 
 
 .h2-text-one {
-    position: absolute;
     width: 315px;
     height: 23px;
     left: 0;
@@ -322,7 +308,6 @@ a:hover {
 }
 
 .middle-one-p {
-    position: absolute;
     width: 315px;
     height: 351px;
     left: 0;
@@ -335,7 +320,6 @@ a:hover {
 }
 
 .h2-text-second {
-    position: absolute;
     width: 315px;
     height: 23px;
     left: 335px;
@@ -349,7 +333,6 @@ a:hover {
 }
 
 .middle-second-p {
-    position: absolute;
     width: 315px;
     height: 328px;
     top: 33px;
@@ -362,7 +345,6 @@ a:hover {
 }
 
 .h2-text-third {
-    position: absolute;
     width: 315px;
     height: 23px;
     left: 670px;
@@ -376,7 +358,6 @@ a:hover {
 }
 
 .middle-third-p {
-    position: absolute;
     width: 315px;
     height: 398px;
     top: 33px;
@@ -389,20 +370,14 @@ a:hover {
 }
 
 .container-thrid { 
-    position: absolute;
     display: flex;
     flex-direction: column;
     width: 1024px;
-    height: 1015px;
-    left: 0;
-    top: 1994px;
     padding: 0 20px;
     align-items: center;
-    isolation: isolate;
 }
 
 .title-last {
-    position: absolute;
     width: 315px;
     height: 98px;
     left: 20px;
@@ -421,7 +396,6 @@ a:hover {
     align-items: flex-end;
     padding: 0;
     gap: 20px;
-    position: absolute;
     width: 649px;
     height: 1015px;
     right: 20px;
@@ -447,7 +421,6 @@ a:hover {
         
         
 .h2-text-second-one {
-    position: absolute;
     width: 649px;
     height: 23px;
     left: 0;
@@ -461,7 +434,6 @@ a:hover {
 }
         
 .last-one-p {
-    position: absolute;
     width: 647.55px;
     height: 211px;
     left: 0;
@@ -475,7 +447,6 @@ a:hover {
 }
         
 .h2-text-second-second {
-    position: absolute;
     width: 649px;
     height: 23px;
     left: 0px;
@@ -488,7 +459,6 @@ a:hover {
     color: var(--dark);
 }
 .last-second-p {
-    position: absolute;
     width: 649px;
     height: 117px;
     left: 0px;
@@ -502,7 +472,6 @@ a:hover {
 }
         
 .h2-text-second-thrid {
-    position: absolute;
     width: 649px;
     height: 23px;
     top: 477px;
@@ -515,7 +484,6 @@ a:hover {
 }
         
 .last-third-p {
-    position: absolute;
     width: 649px;
     height: 164px;
     top: 510px;
@@ -528,7 +496,6 @@ a:hover {
 }
         
 .h2-text-second-fourth {
-    position: absolute;
     width: 649px;
     height: 23px;
     top: 694px;
@@ -542,7 +509,6 @@ a:hover {
 }
         
 .last-fourth-p {
-    position: absolute;
     width: 649px;
     height: 118px;
     top: 727px;
@@ -555,7 +521,6 @@ a:hover {
 }
         
 .h2-text-second-fifth {
-    position: absolute;
     width: 649px;
     height: 23px;
     top: 865px;
@@ -569,14 +534,110 @@ a:hover {
 }
         
 .last-fifth-p {
-    position: absolute;
     width: 649px;
-    height: 117px;
-    top: 898px;
-    left: 0;   
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--light-pink);
+}
+
+.container-fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    width: 1024px;
+}
+
+.h2-last {
+    width: 984px;
+    height: 23px;
+    left: 20px;
+    top: 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--dark);
+    background-color: var(--pink);
+}
+
+.gallery {
+    width: 984px;
+    height: 1091px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.grid-element1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-element2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-element3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: -1;
+}
+
+.grid-element4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-element5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: -1;
+}
+
+.footer {
+    position: relative;
+    width: 1024px;
+}
+
+.h2-end {
+    position: absolute;
+    width: 471px;
+    height: 130px;
+    left: 277px;
+    top: 319px;
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 157px;
+    line-height: 129.53px;
+    color: var(--purple);
+    text-shadow: 2px 2px 0 var(--pink);
 }
